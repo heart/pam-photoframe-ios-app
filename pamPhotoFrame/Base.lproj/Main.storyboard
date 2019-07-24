@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pamPhotoFrame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwj-JL-HsW">
+                                <rect key="frame" x="12" y="102" width="351" height="351"/>
+                                <color key="backgroundColor" red="1" green="0.10791698006051031" blue="0.16428876345749888" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lwj-JL-HsW" secondAttribute="height" multiplier="1:1" id="YHC-Gh-DeC"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tr-Ll-069">
+                                <rect key="frame" x="12" y="43" width="100" height="51"/>
+                                <color key="backgroundColor" red="0.3591881416895169" green="0.69286802168282224" blue="0.98317413472141013" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="85l-bZ-MTd"/>
+                                    <constraint firstAttribute="width" constant="100" id="gXG-0B-Yct"/>
+                                </constraints>
+                                <state key="normal" title="Take photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i4V-Zp-hZe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6e-NW-Cdq">
+                                <rect key="frame" x="262" y="43" width="100" height="51"/>
+                                <color key="backgroundColor" red="0.35918814170000002" green="0.69286802169999995" blue="0.98317413470000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Bq0-9c-ogz"/>
+                                    <constraint firstAttribute="width" constant="100" id="xKd-aF-Okq"/>
+                                </constraints>
+                                <state key="normal" title="Browse">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="browsePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uBc-71-WCz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHo-5F-JUZ">
+                                <rect key="frame" x="112.5" y="473" width="150" height="51"/>
+                                <color key="backgroundColor" red="0.35918814170000002" green="0.69286802169999995" blue="0.98317413470000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="03u-yo-guQ"/>
+                                    <constraint firstAttribute="height" constant="51" id="a41-Wo-M7J"/>
+                                </constraints>
+                                <state key="normal" title="PRINT Frame1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickPrint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="amq-G8-978"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYt-CZ-HyF">
+                                <rect key="frame" x="112.5" y="550" width="150" height="51"/>
+                                <color key="backgroundColor" red="0.35918814170000002" green="0.69286802169999995" blue="0.98317413470000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Olx-X2-1YX"/>
+                                    <constraint firstAttribute="width" constant="150" id="akl-wq-f9e"/>
+                                </constraints>
+                                <state key="normal" title="PRINT Frame2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickPrint2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g7P-4u-lNN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18323194171202128" green="0.24672921159769451" blue="0.32100064766839376" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="dHo-5F-JUZ" firstAttribute="top" secondItem="lwj-JL-HsW" secondAttribute="bottom" constant="20" id="11M-53-3qu"/>
+                            <constraint firstItem="dHo-5F-JUZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AOT-jx-KKu"/>
+                            <constraint firstItem="lwj-JL-HsW" firstAttribute="top" secondItem="2tr-Ll-069" secondAttribute="bottom" constant="8" id="CAT-Aa-ExM"/>
+                            <constraint firstItem="lwj-JL-HsW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="KBq-yH-RJR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r6e-NW-Cdq" secondAttribute="trailing" constant="13" id="W9c-ak-ZON"/>
+                            <constraint firstItem="DYt-CZ-HyF" firstAttribute="top" secondItem="dHo-5F-JUZ" secondAttribute="bottom" constant="26" id="inC-Dd-9Hv"/>
+                            <constraint firstItem="2tr-Ll-069" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="kIb-7H-2M6"/>
+                            <constraint firstItem="DYt-CZ-HyF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rSm-Qp-MEa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lwj-JL-HsW" secondAttribute="trailing" constant="12" id="tRt-di-HWt"/>
+                            <constraint firstItem="r6e-NW-Cdq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="zgk-xb-e4B"/>
+                            <constraint firstItem="2tr-Ll-069" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="zvP-Gs-gmy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cropFrame" destination="lwj-JL-HsW" id="6lR-L1-6Ka"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.18140929535232" y="132"/>
+        </scene>
+    </scenes>
+</document>
