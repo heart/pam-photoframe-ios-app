@@ -364,7 +364,7 @@ extension ViewController{
             if success {
                 // Saved successfully!
             }
-            else if let error = error {
+            else if error != nil {
                 // Save photo failed with error
             }
             else {

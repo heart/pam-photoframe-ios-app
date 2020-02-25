@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0962846F224896EA00074A4E /* pamPhotoFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pamPhotoFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0962846F224896EA00074A4E /* Photo PAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo PAM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09628472224896EA00074A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09628474224896EA00074A4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		09628477224896EA00074A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		09628470224896EA00074A4E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0962846F224896EA00074A4E /* pamPhotoFrame.app */,
+				0962846F224896EA00074A4E /* Photo PAM.app */,
 				09628483224896EC00074A4E /* pamPhotoFrameTests.xctest */,
 				0962848E224896EC00074A4E /* pamPhotoFrameUITests.xctest */,
 			);
@@ -148,7 +148,7 @@
 			);
 			name = pamPhotoFrame;
 			productName = pamPhotoFrame;
-			productReference = 0962846F224896EA00074A4E /* pamPhotoFrame.app */;
+			productReference = 0962846F224896EA00074A4E /* Photo PAM.app */;
 			productType = "com.apple.product-type.application";
 		};
 		09628482224896EC00074A4E /* pamPhotoFrameTests */ = {
@@ -443,15 +443,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3W74L73E58;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5PN9LL8N5M;
 				INFOPLIST_FILE = pamPhotoFrame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.3digitsacademy.database.pamPhotoFrame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.3dsinteractive.photoprinter;
+				PRODUCT_NAME = "Photo PAM";
+				PROVISIONING_PROFILE_SPECIFIER = "Photo Frame Adhoc";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,15 +463,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3W74L73E58;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5PN9LL8N5M;
 				INFOPLIST_FILE = pamPhotoFrame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.3digitsacademy.database.pamPhotoFrame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.3dsinteractive.photoprinter;
+				PRODUCT_NAME = "Photo PAM";
+				PROVISIONING_PROFILE_SPECIFIER = "Photo Frame Adhoc";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
